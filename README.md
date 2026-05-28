@@ -46,6 +46,20 @@ two complementary models suited to different forecasting horizons.
 | XGBoost | Non-Q4 (Jan–Jun 2017) | $3,204 | $4,014 | 44.32% | 39.03% |
 | XGBoost | Q4 (Oct–Dec 2017) | $3,649 | $5,139 | 35.85% | 32.96% |
 
+## Visualizations
+
+### Sales Forecast — Next 8 Weeks
+![Forecast](forecast_plot.png)
+
+### Trend & Seasonality Decomposition
+![Components](components_plot.png)
+
+### Model Comparison — Prophet vs XGBoost
+![Comparison](model_comparison.png)
+
+### Category Forecast — Next 8 Weeks
+![Categories](category_forecast.png)
+
 > Prophet performs best on stable non-Q4 periods (lowest MAE).  
 > XGBoost performs comparably on Q4 due to lag features reacting to recent demand shifts.  
 > Higher errors in Q4 are expected — holiday-season spikes are driven by unpredictable  
