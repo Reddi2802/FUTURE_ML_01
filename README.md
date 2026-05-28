@@ -37,7 +37,19 @@ two complementary models suited to different forecasting horizons.
 | XGBoost | Non-Q4 | ~20% | ~20% |
 | XGBoost | Q4 | ~28% | ~28% |
 
-> Fill in your actual numbers from the comparison cell output
+## Results
+
+| Model | Test Period | MAE ($) | RMSE ($) | sMAPE | MAE as % of Mean |
+|---|---|---|---|---|---|
+| Prophet | Non-Q4 (Jan–Jun 2017) | $2,677 | $3,186 | 34.54% | 32.61% |
+| Prophet | Q4 (Oct–Dec 2017) | $4,022 | $4,720 | 37.39% | 36.33% |
+| XGBoost | Non-Q4 (Jan–Jun 2017) | $3,204 | $4,014 | 44.32% | 39.03% |
+| XGBoost | Q4 (Oct–Dec 2017) | $3,649 | $5,139 | 35.85% | 32.96% |
+
+> Prophet performs best on stable non-Q4 periods (lowest MAE).  
+> XGBoost performs comparably on Q4 due to lag features reacting to recent demand shifts.  
+> Higher errors in Q4 are expected — holiday-season spikes are driven by unpredictable  
+> bulk orders and promotional variability not captured in historical patterns alone.
 
 ## Project Structure
 ├── superstore_sales.csv
