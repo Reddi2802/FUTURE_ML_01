@@ -66,9 +66,18 @@ two complementary models suited to different forecasting horizons.
 > bulk orders and promotional variability not captured in historical patterns alone.
 
 ## Project Structure
+
+```text
+sales-demand-forecasting/
+│
 ├── superstore_sales.csv
 ├── sales_forecasting_v4.ipynb
-└── README.md
+├── README.md
+├── category_forecast.png
+├── components_plot.png
+├── forecast_plot.png
+└── model_comparison.png
+```
 
 ## Setup
 
